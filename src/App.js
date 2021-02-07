@@ -8,11 +8,14 @@ import ThirdComponent from './components/learning-examples/ThirdComponent';
 import Counter from './components/counter/Counter';
 
 // Class components and functional components should start with uppercase letter
+// I am adding serveral counters, each with property called by that is equal to js object {<int>}
 class App  extends Component{
   render() {
     return (
       <div className="App">
-        <Counter/>
+        <Counter by={1}/>
+        <Counter by={5}/>
+        <Counter by={10}/>
       </div>
     );
   }
